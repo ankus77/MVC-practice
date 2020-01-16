@@ -1,0 +1,25 @@
+﻿@model FirstWebApp.Models.StudentModel
+@{
+    ViewBag.Title = "GetStudentById";
+}
+
+<h2>GetStudentById</h2>
+<table class="table">
+    <tr>
+        <td>id</td>
+        <td>@Html.DisplayFor(Model => Model.StudentId)</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>@Html.DisplayFor(Model => Model.StudentName)</td><!---Strongly Typed HtmlHelpers-->
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>@Html.DisplayFor(Model => Model.StudentEmail)</td><!---Strongly Typed HtmlHelpers-->
+    </tr>
+
+
+</table>
+
+@Html.ActionLink("back","GetStudents")
+

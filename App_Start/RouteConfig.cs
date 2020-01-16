@@ -16,7 +16,7 @@ namespace FirstWebApp
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Demo", action = "Index1", id = UrlParameter.Optional }
+                defaults: new { controller = "Demo", action = "GetStudents", id = UrlParameter.Optional }
             );
         }
     }
