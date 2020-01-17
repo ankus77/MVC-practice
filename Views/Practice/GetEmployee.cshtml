@@ -1,0 +1,44 @@
+﻿@model IEnumerable<FirstWebApp.Models.Test1>
+@{
+    ViewBag.Title = "GetEmployee";
+}
+
+<h2>Employee_Details:</h2>
+<table class="table" style="border:1px solid">
+    <!--this row is created for the headings of the columns in the first row-->
+    <tr style="background-color:aqua">
+        <!--for using html helper class we need to start with tag-->
+
+        <th>
+            @Html.DisplayNameFor(Model => Model.EmpId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.EmpName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.EmpPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.EmpProjectId)
+        </th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+          <td>
+              @Html.DisplayFor(Model => x.EmpId)
+          </td>
+           <td>
+               @Html.DisplayFor(Model => x.EmpName)
+            </td>
+            <td>
+                @Html.DisplayFor(Model => x.EmpPhoneNumber)
+             </td>
+            <td>
+                @Html.DisplayFor(Model => x.EmpProjectId)
+             </td>
+        </tr>
+
+    }
+
+</table>

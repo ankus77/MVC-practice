@@ -123,9 +123,11 @@
     <Compile Include="Controllers\AnkusController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PracticeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Test1.cs" />
     <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -168,6 +170,9 @@
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Demo\GetStudentById.cshtml" />
     <Content Include="Views\Demo\GetStudents.cshtml" />
+    <Content Include="Views\Practice\IndexPractice.cshtml" />
+    <Content Include="Views\Practice\GetEmployee.cshtml" />
+    <Content Include="Views\Practice\GetEmployeeById.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
