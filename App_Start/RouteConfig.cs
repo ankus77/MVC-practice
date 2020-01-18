@@ -16,7 +16,7 @@ namespace FirstWebApp
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Practice", action = "GetEmployeeById", id = UrlParameter.Optional }
+                defaults: new { controller = "Practice", action = "GetEmployee", id = UrlParameter.Optional }
             );
         }
     }
